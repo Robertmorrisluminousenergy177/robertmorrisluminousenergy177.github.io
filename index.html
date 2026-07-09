@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A. Rivera — About</title>
+<meta name="description" content="Personal academic website of A. Rivera, researcher in computational neuroscience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AR</span>
+      A. Rivera
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="news.html">News</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="hero-topo" viewBox="0 0 1200 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-50 380 C 150 320, 300 420, 500 360 S 850 260, 1250 340" stroke="#4c9c93" stroke-width="1" fill="none" opacity="0.35"/>
+    <path d="M-50 420 C 180 370, 320 460, 540 400 S 880 300, 1250 390" stroke="#4c9c93" stroke-width="1" fill="none" opacity="0.28"/>
+    <path d="M-50 460 C 200 420, 360 490, 580 440 S 900 340, 1250 430" stroke="#4c9c93" stroke-width="1" fill="none" opacity="0.2"/>
+    <path d="M-50 60 C 220 20, 380 100, 620 50 S 950 -20, 1250 60" stroke="#b98a2e" stroke-width="1" fill="none" opacity="0.18"/>
+    <circle cx="860" cy="130" r="2.5" fill="#4c9c93" opacity="0.8"/>
+    <circle cx="940" cy="180" r="2" fill="#b98a2e" opacity="0.7"/>
+    <circle cx="790" cy="210" r="1.8" fill="#4c9c93" opacity="0.6"/>
+  </svg>
+  <div class="hero-inner">
+    <div class="eyebrow">Computational Neuroscience — Dept. of Cognitive Science</div>
+    <h1>Mapping how the brain keeps <em>time</em>.</h1>
+    <p class="lede">I'm A. Rivera, a researcher building computational models of temporal cognition — how neural circuits encode duration, sequence, and rhythm, and what breaks down in disorders of timing.</p>
+    <div class="hero-actions">
+      <a href="research.html" class="btn btn-primary">See my research →</a>
+      <a href="cv.html" class="btn btn-ghost">View CV</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>14</strong>publications</div>
+      <div><strong>3</strong>active grants</div>
+      <div><strong>2019–present</strong>Riverbank University</div>
+      <div><strong>rivera@lab.edu</strong>get in touch</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap about-grid">
+    <div data-reveal>
+      <div class="about-photo">photo placeholder — 4:5</div>
+      <div class="about-facts">
+        <div class="row"><span>Position</span><span>Assistant Professor</span></div>
+        <div class="row"><span>Department</span><span>Cognitive Science</span></div>
+        <div class="row"><span>Institution</span><span>Riverbank University</span></div>
+        <div class="row"><span>Office</span><span>Ashworth Hall, 412</span></div>
+        <div class="row"><span>Email</span><span>rivera@lab.edu</span></div>
+      </div>
+    </div>
+    <div data-reveal>
+      <div class="eyebrow">About me</div>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.1rem);margin-top:10px;">A short version of a long story</h2>
+      <p style="margin-top:18px;color:var(--ink-soft);">
+        I've been fascinated by timing since a PhD rotation project where a 200-millisecond
+        delay in a behavioral task turned out to explain a decade-old puzzle in the literature.
+        Since then my work has sat at the intersection of computational modeling, systems
+        neuroscience, and clinical collaboration — trying to understand time not as a passive
+        backdrop for cognition, but as something the brain actively constructs.
+      </p>
+      <p style="margin-top:16px;color:var(--ink-soft);">
+        Before joining Riverbank University, I completed a postdoc at Alderidge Institute
+        working on recurrent network models of interval timing, and a PhD in Neuroscience
+        where I combined EEG and behavioral psychophysics to study duration perception.
+        Outside the lab, I mentor first-generation PhD applicants and spend an unreasonable
+        amount of time thinking about long-distance trail running.
+      </p>
+      <p style="margin-top:16px;color:var(--ink-soft);">
+        My lab is always interested in hearing from prospective students and collaborators —
+        see the <a href="cv.html" style="color:var(--teal);text-decoration:underline;">CV page</a>
+        for a full academic history, or the
+        <a href="research.html" style="color:var(--teal);text-decoration:underline;">research page</a>
+        for what we're currently working on.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 A. Rivera</div>
+    <div>Built with plain HTML — hosted on GitHub Pages</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

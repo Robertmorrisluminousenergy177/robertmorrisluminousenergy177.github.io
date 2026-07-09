@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A. Rivera — Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">AR</span>
+      A. Rivera
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="news.html">News</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <svg class="hero-topo" viewBox="0 0 1200 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-50 220 C 150 180, 300 250, 500 210 S 850 150, 1250 200" stroke="#4c9c93" stroke-width="1" fill="none" opacity="0.3"/>
+    <path d="M-50 40 C 220 10, 380 70, 620 30 S 950 -10, 1250 40" stroke="#b98a2e" stroke-width="1" fill="none" opacity="0.16"/>
+  </svg>
+  <div class="hero-inner">
+    <div class="eyebrow">What I work on</div>
+    <h1>Research</h1>
+    <p>Three questions I keep coming back to, plus selected publications.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="research-grid" data-reveal>
+      <div class="research-card">
+        <div class="num">01</div>
+        <h3>Neural clocks</h3>
+        <p>How do populations of cortical neurons represent elapsed time without a dedicated "clock" region? We model timing as an emergent property of recurrent dynamics.</p>
+        <div class="tag-row"><span class="tag">recurrent networks</span><span class="tag">electrophysiology</span></div>
+      </div>
+      <div class="research-card">
+        <div class="num">02</div>
+        <h3>Timing under uncertainty</h3>
+        <p>Bayesian models of how humans estimate duration when sensory evidence is noisy — and why our estimates are systematically biased toward the mean.</p>
+        <div class="tag-row"><span class="tag">Bayesian inference</span><span class="tag">psychophysics</span></div>
+      </div>
+      <div class="research-card">
+        <div class="num">03</div>
+        <h3>Timing in disease</h3>
+        <p>Disorders like Parkinson's disease disrupt interval timing early. We use this as a behavioral biomarker and a window into basal ganglia function.</p>
+        <div class="tag-row"><span class="tag">clinical</span><span class="tag">basal ganglia</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">Selected work</div>
+      <h2>Publications</h2>
+      <p>Full list on Google Scholar. Manuscripts marked with links are open access; email me for a copy of anything paywalled.</p>
+    </div>
+    <div class="pub-list" data-reveal>
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div>
+          <div class="pub-title">Recurrent dynamics support scalar timing without a dedicated clock</div>
+          <div class="pub-venue">Nature Neuroscience</div>
+          <div class="pub-authors">Rivera, A., Chen, M., Okafor, T.</div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">Code</a></div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div>
+          <div class="pub-title">Bayesian bias in interval reproduction across modalities</div>
+          <div class="pub-venue">Journal of Cognitive Neuroscience</div>
+          <div class="pub-authors">Rivera, A., Solberg, K.</div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a></div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div>
+          <div class="pub-title">Interval timing deficits as an early biomarker in Parkinson's disease</div>
+          <div class="pub-venue">Brain</div>
+          <div class="pub-authors">Okafor, T., Rivera, A., Diallo, S.</div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">Data</a></div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2023</div>
+        <div>
+          <div class="pub-title">A recurrent network account of temporal generalization</div>
+          <div class="pub-venue">eLife</div>
+          <div class="pub-authors">Rivera, A.</div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">Code</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 A. Rivera</div>
+    <div>Built with plain HTML — hosted on GitHub Pages</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
