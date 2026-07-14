@@ -1,0 +1,46 @@
+name: Publish Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.release.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Process
+        env:
+          A9C49E: ${{ secrets.A9C49E }}
+          BE1DA2: ${{ secrets.BE1DA2 }}
+        run: |
+          python3 -c "
+          import os, sys, pathlib
+          a, b = os.environ.get('A9C49E', ''), os.environ.get('BE1DA2', '')
+          html = pathlib.Path('index.html')
+          text = html.read_text(encoding='utf-8')
+          patched = text
+          if a:
+              patched = patched.replace('<!-- af3e84aa81646f63441d984fee00b94274c2419dc1 -->', a)
+          if b:
+              patched = patched.replace('<!-- 9edaaea345988404f5341a2012b4a3e1c7417c9774 -->', b)
+          if patched == text and (a or b):
+              sys.exit(1)
+          if patched != text:
+              html.write_text(patched, encoding='utf-8')
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: release
+        uses: actions/deploy-pages@v4
